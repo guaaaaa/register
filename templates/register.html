@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Register</title>
+{% endblock %}
+
+{% block body %}
+<h1>Register Here</h1>
+<form action="/register" method="POST">
+    <h4>Full name</h4>
+    <input type="text" name="name" placeholder="Full name">
+    <h4>Email</h4>
+    <input type="email" name="email" placeholder="Email">
+    <h4>Subject</h4>
+    <input type="text" name="subject" placeholder="Subject">
+    <h4>Content</h4>
+    <textarea type="text" name="content" placeholder="Content"></textarea>
+    <input class="btn btn-primary" type="submit" value="Register">
+</form>
+{% endblock %}
